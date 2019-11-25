@@ -10,6 +10,7 @@
 		4507790B238C06B40009CE04 /* CocoaT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45077901238C06B40009CE04 /* CocoaT.framework */; };
 		45077910238C06B40009CE04 /* CocoaTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507790F238C06B40009CE04 /* CocoaTTests.swift */; };
 		45077912238C06B50009CE04 /* CocoaT.h in Headers */ = {isa = PBXBuildFile; fileRef = 45077904238C06B40009CE04 /* CocoaT.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4507791C238C06E80009CE04 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507791B238C06E80009CE04 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		4507790A238C06B40009CE04 /* CocoaTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4507790F238C06B40009CE04 /* CocoaTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaTTests.swift; sourceTree = "<group>"; };
 		45077911238C06B40009CE04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4507791B238C06E80009CE04 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				45077904238C06B40009CE04 /* CocoaT.h */,
 				45077905238C06B40009CE04 /* Info.plist */,
+				4507791B238C06E80009CE04 /* Service.swift */,
 			);
 			path = CocoaT;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					45077900238C06B40009CE04 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					45077909238C06B40009CE04 = {
 						CreatedOnToolsVersion = 11.3;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4507791C238C06E80009CE04 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		45077916238C06B50009CE04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = network.talpa.account.consent.testappswiftui.CocoaT;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +370,7 @@
 		45077917238C06B50009CE04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +394,7 @@
 		45077919238C06B50009CE04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CocoaTTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +412,7 @@
 		4507791A238C06B50009CE04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CocoaTTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
